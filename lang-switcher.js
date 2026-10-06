@@ -10,7 +10,7 @@ function t (key, fallback) {
   return translations[key] || fallback || key
 }
 
-// Lê "translations.<lang>=true/false" do sections.txt (se faltar a chave ou o ficheiro, a língua fica ativa).
+// Lê "translations.<lang>=true/false" do sections.txt. Só fica ativa com true explícito (se faltar a chave ou o ficheiro, fica bloqueada).
 // O português está sempre ativo.
 let enabledLangsPromise
 function enabledLanguages () {
@@ -21,8 +21,8 @@ function enabledLanguages () {
       .then(text => {
         const enabled = {}
         SUPPORTED_LANGS.forEach(l => {
-          const m = text.match(new RegExp('^\s*translations\.' + l + '\s*=\s*(\w+)', 'mi'))
-          enabled[l] = l === DEFAULT_LANG || !m || m[1].toLowerCase() === 'true'
+          const m = text.match(new RegExp('^\\s*translations\\.' + l + '\\s*=\\s*(\\w+)', 'mi'))
+          enabled[l] = l === DEFAULT_LANG || (!!m && m[1].toLowerCase() === 'true')
         })
         return enabled
       })
