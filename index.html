@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Reserve um transporte privado em Portugal e na Europa: aeroportos, estações de comboio, viagens entre cidades e rotas internacionais."
+		/>
+		<meta name="theme-color" content="#d4af37" />
+		<title>Transporte Privado em Portugal e na Europa | Sublime Trips</title>
+		<link rel="icon" type="image/webp" href="assets/Logo.webp" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- ============ NAVBAR ============ -->
+		<header class="navbar" id="navbar">
+			<div class="container navbar__inner">
+				<a href="#home" class="navbar__brand" aria-label="Sublime Trips">
+					<img
+						src="assets/Logo.webp"
+						alt=""
+						class="navbar__logo"
+						width="64"
+						height="57"
+					/>
+					<span class="navbar__name">Sublime <em>Trips</em></span>
+				</a>
+
+				<button
+					class="navbar__toggle"
+					id="navToggle"
+					data-i18n-attr="aria-label:aria.menu"
+					aria-label="Abrir menu"
+					aria-expanded="false"
+					aria-controls="navMenu"
+				>
+					<span></span><span></span><span></span>
+				</button>
+
+				<nav class="navbar__menu" id="navMenu">
+					<ul class="navbar__links">
+						<li>
+							<a href="#home" class="active" data-i18n="nav.home">Início</a>
+						</li>
+						<li><a href="#services" data-i18n="nav.services">Serviços</a></li>
+						<li><a href="#fleet" data-i18n="nav.fleet">Viaturas</a></li>
+						<li>
+							<a href="#destinations" data-i18n="nav.destinations">Rotas</a>
+						</li>
+						<li><a href="#about" data-i18n="nav.about">Sobre nós</a></li>
+						<li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+					</ul>
+
+					<div class="navbar__actions">
+						<!-- Language dropdown -->
+						<div class="lang has-dropdown">
+							<button
+								class="lang__btn dropdown-toggle"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<img
+									src="assets/languages/pt.png"
+									alt=""
+									class="flag"
+									id="currentFlag"
+								/>
+								<span id="currentLang">PT</span>
+								<i class="bi bi-chevron-down"></i>
+							</button>
+							<ul class="dropdown dropdown--right">
+								<li>
+									<a href="#" data-lang="pt"
+										><img src="assets/languages/pt.png" alt="" class="flag" />
+										<span data-i18n="lang.pt">Português</span></a
+									>
+								</li>
+								<li>
+									<a href="#" data-lang="en"
+										><img src="assets/languages/en.png" alt="" class="flag" />
+										<span data-i18n="lang.en">English</span></a
+									>
+								</li>
+								<li>
+									<a href="#" data-lang="es"
+										><img src="assets/languages/es.png" alt="" class="flag" />
+										<span data-i18n="lang.es">Español</span></a
+									>
+								</li>
+								<li>
+									<a href="#" data-lang="fr"
+										><img src="assets/languages/fr.png" alt="" class="flag" />
+										<span data-i18n="lang.fr">Français</span></a
+									>
+								</li>
+							</ul>
+						</div>
+						<a
+							href="https://wa.me/351916881648"
+							class="nav-whatsapp"
+							target="_blank"
+							rel="noopener"
+							aria-label="WhatsApp"
+							><i class="bi bi-whatsapp"></i> <span>WhatsApp</span></a
+						>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero" id="home">
+				<div class="hero__overlay"></div>
+				<div class="container hero__inner">
+					<div class="hero__text">
+						<span class="eyebrow" data-i18n="hero.eyebrow"
+							>Transportes privados</span
+						>
+						<h1 data-i18n="hero.title">
+							Viaje com conforto por Portugal e Europa
+						</h1>
+						<p data-i18n="hero.text">
+							Preços fixos, motoristas profissionais e apoio permanente. Sem
+							custos escondidos.
+						</p>
+						<ul class="hero__badges">
+							<li>
+								<i class="bi bi-check-circle-fill"></i>
+								<span data-i18n="hero.badge1">Cancelamento gratuito</span>
+							</li>
+							<li>
+								<i class="bi bi-check-circle-fill"></i>
+								<span data-i18n="hero.badge2">Acompanhamento de voos</span>
+							</li>
+							<li>
+								<i class="bi bi-check-circle-fill"></i>
+								<span data-i18n="hero.badge3">Receção personalizada</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--black" id="services">
+				<div class="container">
+					<header class="section__head section__head--light">
+						<span class="eyebrow" data-i18n="services.eyebrow">Serviços</span>
+						<h2 data-i18n="services.title">Para onde o podemos levar?</h2>
+					</header>
+					<div class="grid grid--3">
+						<article class="card service">
+							<img
+								src="assets/servicos/1.webp"
+								data-i18n-attr="alt:services.s1.alt"
+								alt="Transfer de aeroporto"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 data-i18n="services.s1.title">Transfers de aeroporto</h3>
+								<p data-i18n="services.s1.text">
+									Recolha porta a porta em qualquer aeroporto de Portugal.
+								</p>
+								<a href="#contact" class="btn btn--primary service__cta"
+									><span data-i18n="services.book">Reservar</span></a
+								>
+							</div>
+						</article>
+						<article class="card service">
+							<img
+								src="assets/servicos/2.webp"
+								data-i18n-attr="alt:services.s2.alt"
+								alt="Transfer de estação de comboio"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 data-i18n="services.s2.title">Estações de comboio</h3>
+								<p data-i18n="services.s2.text">
+									Ligações simples de e para as principais estações.
+								</p>
+								<a href="#contact" class="btn btn--primary service__cta"
+									><span data-i18n="services.book">Reservar</span></a
+								>
+							</div>
+						</article>
+						<article class="card service">
+							<img
+								src="assets/servicos/3.webp"
+								data-i18n-attr="alt:services.s3.alt"
+								alt="Viagens intercidades e internacionais"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 data-i18n="services.s3.title">
+									Intercidades e internacional
+								</h3>
+								<p data-i18n="services.s3.text">
+									Viaje entre cidades e atravesse fronteiras.
+								</p>
+								<a href="#contact" class="btn btn--primary service__cta"
+									><span data-i18n="services.book">Reservar</span></a
+								>
+							</div>
+						</article>
+					</div>
+
+					<header
+						class="section__head section__head--light section__head--next"
+					>
+						<span class="eyebrow" data-i18n="steps.eyebrow">Como funciona</span>
+						<h2 data-i18n="steps.title">O seu transfer em três passos</h2>
+					</header>
+					<div class="grid grid--3">
+						<div class="step">
+							<span class="step__num">1</span>
+							<h3 data-i18n="steps.s1.title">Envie os detalhes</h3>
+							<p data-i18n="steps.s1.text">
+								Ligue, envie-nos mensagem por WhatsApp ou preencha o breve
+								formulário de orçamento.
+							</p>
+						</div>
+						<div class="step">
+							<span class="step__num">2</span>
+							<h3 data-i18n="steps.s2.title">Receba a confirmação</h3>
+							<p data-i18n="steps.s2.text">
+								Confirmamos a disponibilidade, os detalhes da recolha e o preço
+								final.
+							</p>
+						</div>
+						<div class="step">
+							<span class="step__num">3</span>
+							<h3 data-i18n="steps.s3.title">Viaje com conforto</h3>
+							<p data-i18n="steps.s3.text">
+								O seu motorista chega ao local e à hora combinados.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--dark" id="fleet">
+				<div class="container">
+					<header class="section__head section__head--light">
+						<span class="eyebrow" data-i18n="fleet.eyebrow"
+							>Catálogo de Viaturas</span
+						>
+						<h2 data-i18n="fleet.title">A nossa frota</h2>
+					</header>
+					<div class="grid grid--3">
+						<article class="card vehicle">
+							<img
+								src="assets/carros/1.webp"
+								data-i18n-attr="alt:fleet.eclass"
+								alt="Mercedes Classe E"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 data-i18n="fleet.eclass">Mercedes Classe E</h3>
+								<ul class="vehicle__specs">
+									<li><i class="bi bi-people"></i> 4</li>
+									<li><i class="bi bi-bag"></i> 3</li>
+									<li><i class="bi bi-snow"></i> A/C</li>
+									<li><i class="bi bi-wifi"></i> Wi-Fi</li>
+								</ul>
+							</div>
+						</article>
+						<article class="card vehicle">
+							<img
+								src="assets/carros/3.webp"
+								data-i18n-attr="alt:fleet.vito"
+								alt="Mercedes Vito"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 data-i18n="fleet.vito">Mercedes Vito</h3>
+								<ul class="vehicle__specs">
+									<li><i class="bi bi-people"></i> 8</li>
+									<li><i class="bi bi-bag"></i> 8</li>
+									<li><i class="bi bi-snow"></i> A/C</li>
+									<li><i class="bi bi-wifi"></i> Wi-Fi</li>
+								</ul>
+							</div>
+						</article>
+						<article class="card vehicle">
+							<img
+								src="assets/carros/2.webp"
+								data-i18n-attr="alt:fleet.galaxy"
+								alt="Ford Galaxy"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 data-i18n="fleet.galaxy">Ford Galaxy</h3>
+								<ul class="vehicle__specs">
+									<li><i class="bi bi-people"></i> 6</li>
+									<li><i class="bi bi-bag"></i> 4</li>
+									<li><i class="bi bi-snow"></i> A/C</li>
+									<li><i class="bi bi-wifi"></i> Wi-Fi</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--black" id="destinations">
+				<div class="container">
+					<header class="section__head section__head--light">
+						<span class="eyebrow" data-i18n="dest.eyebrow"
+							>Rotas populares</span
+						>
+						<h2 data-i18n="dest.title">Rotas populares</h2>
+						<p data-i18n="dest.text">
+							Se acabou de chegar a Portugal e quer chegar ao seu destino com
+							segurança e conforto, sem ligações, tempos de espera ou stress
+							desnecessário, pode reservar um transporte privado de acordo com o
+							seu horário e percurso.
+						</p>
+					</header>
+					<div class="grid grid--3">
+						<article class="destination">
+							<i class="bi bi-geo-alt"></i>
+							<span data-i18n="dest.r1.title"
+								>Aeroporto<br />Sá Carneiro - Porto</span
+							>
+							<small data-i18n="dest.r1.text"
+								>Um transporte direto e confortável para quem quer chegar
+								rapidamente ao centro do Porto sem preocupações.</small
+							>
+							<a href="#contact" class="btn btn--primary destination__cta"
+								><span data-i18n="services.book">Reservar</span></a
+							>
+						</article>
+						<article class="destination">
+							<i class="bi bi-map"></i>
+							<span data-i18n="dest.r2.title"
+								>Aeroporto<br />Lisboa - Porto</span
+							>
+							<small data-i18n="dest.r2.text"
+								>Um transporte direto para uma viagem confortável até ao Porto —
+								sem ligações, tempos de espera ou complicações.</small
+							>
+							<a href="#contact" class="btn btn--primary destination__cta"
+								><span data-i18n="services.book">Reservar</span></a
+							>
+						</article>
+						<article class="destination">
+							<i class="bi bi-pin-map-fill"></i>
+							<span data-i18n="dest.r3.title">Porto - Madrid</span>
+							<small data-i18n="dest.r3.text"
+								>Uma rota internacional conveniente para quem quer viajar sem
+								logística desnecessária, stress ou paragens adicionais.</small
+							>
+							<a href="#contact" class="btn btn--primary destination__cta"
+								><span data-i18n="services.book">Reservar</span></a
+							>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--dark" id="about">
+				<div class="container">
+					<header class="section__head section__head--light">
+						<span class="eyebrow" data-i18n="about.eyebrow"
+							>Porquê escolher-nos</span
+						>
+						<h2 data-i18n="about.title">A sua viagem, a nossa prioridade</h2>
+						<p data-i18n="about.text">
+							Os detalhes importantes são combinados antes da partida.
+						</p>
+					</header>
+					<div class="grid grid--4">
+						<article class="card feature">
+							<div class="feature__icon">
+								<i class="bi bi-person-wheelchair"></i>
+							</div>
+							<h3 data-i18n="about.f1.title">Cadeira de rodas dobrável</h3>
+							<p data-i18n="about.f1.text">
+								Uma cadeira de rodas dobrável pode ser transportada após
+								confirmação do espaço de bagagem disponível.
+							</p>
+						</article>
+						<article class="card feature">
+							<div class="feature__icon"><i class="bi bi-people"></i></div>
+							<h3 data-i18n="about.f2.title">Famílias bem-vindas</h3>
+							<p data-i18n="about.f2.text">
+								As cadeiras de criança podem ser preparadas quando solicitadas
+								durante a reserva.
+							</p>
+						</article>
+						<article class="card feature">
+							<div class="feature__icon"><i class="bi bi-luggage"></i></div>
+							<h3 data-i18n="about.f3.title">Espaço para bagagem</h3>
+							<p data-i18n="about.f3.text">
+								A bagagem standard está incluída; bagagens maiores ou invulgares
+								são combinadas antecipadamente.
+							</p>
+						</article>
+						<article class="card feature">
+							<div class="feature__icon"><i class="bi bi-airplane"></i></div>
+							<h3 data-i18n="about.f4.title">Acompanhamento de voos</h3>
+							<p data-i18n="about.f4.text">
+								Monitorizamos atrasos para que o motorista esteja sempre a
+								horas.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--black" id="contact">
+				<div class="container">
+					<header class="section__head section__head--light">
+						<span class="eyebrow" data-i18n="contact.eyebrow">Contato</span>
+						<h2 data-i18n="contact.title">Fale connosco</h2>
+					</header>
+					<div class="contact">
+						<ul class="contact__info">
+							<li>
+								<a href="tel:+351916881648"
+									><i class="bi bi-telephone"></i> +351 916 881 648</a
+								>
+							</li>
+							<li>
+								<a href="mailto:info@sublimetrips.com"
+									><i class="bi bi-envelope"></i> info@sublimetrips.com</a
+								>
+							</li>
+						</ul>
+						<form class="contact__form" id="contactForm" novalidate>
+							<div class="field">
+								<label for="cname" data-i18n="contact.name">Nome</label>
+								<div class="input">
+									<input id="cname" type="text" required />
+								</div>
+							</div>
+							<div class="field">
+								<label for="cemail" data-i18n="contact.email">Email</label>
+								<div class="input">
+									<input id="cemail" type="email" required />
+								</div>
+							</div>
+							<div class="field">
+								<label for="cmsg" data-i18n="contact.message">Mensagem</label>
+								<div class="input">
+									<textarea id="cmsg" rows="4" required></textarea>
+								</div>
+							</div>
+							<button
+								type="submit"
+								class="btn btn--primary"
+								data-i18n="contact.send"
+							>
+								Enviar mensagem
+							</button>
+							<p class="form-msg" id="contactMsg" role="status"></p>
+						</form>
+					</div>
+					<div class="faq-block">
+						<header class="section__head section__head--light">
+							<h2 data-i18n="faq.title">Perguntas frequentes</h2>
+						</header>
+						<div class="accordion">
+							<div class="accordion__item">
+								<button class="accordion__btn" aria-expanded="false">
+									<span data-i18n="faq.q1">Como faço uma reserva?</span>
+									<i class="bi bi-plus-lg"></i>
+								</button>
+								<div class="accordion__panel">
+									<p data-i18n="faq.a1">
+										Pode entrar em contato connosco da forma que preferir: por
+										telefone, por WhatsApp, por email ou através do formulário
+										do nosso site.
+									</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__btn" aria-expanded="false">
+									<span data-i18n="faq.q6">Quanto custa a viagem?</span>
+									<i class="bi bi-plus-lg"></i>
+								</button>
+								<div class="accordion__panel">
+									<p data-i18n="faq.a6">
+										O preço depende do trajeto e da classe do veículo. Deixe-nos
+										um pedido ou envie-nos uma mensagem — enviaremos rapidamente
+										um orçamento personalizado.
+									</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__btn" aria-expanded="false">
+									<span data-i18n="faq.q2"
+										>Posso cancelar a minha reserva?</span
+									>
+									<i class="bi bi-plus-lg"></i>
+								</button>
+								<div class="accordion__panel">
+									<p data-i18n="faq.a2">
+										Sim, cancelamento gratuito até 24 horas antes da recolha.
+									</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__btn" aria-expanded="false">
+									<span data-i18n="faq.q3">E se o meu voo atrasar?</span>
+									<i class="bi bi-plus-lg"></i>
+								</button>
+								<div class="accordion__panel">
+									<p data-i18n="faq.a3">
+										Acompanhamos o seu voo e ajustamos a hora de recolha sem
+										custos adicionais.
+									</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__btn" aria-expanded="false">
+									<span data-i18n="faq.q4"
+										>O motorista ajuda com a bagagem?</span
+									>
+									<i class="bi bi-plus-lg"></i>
+								</button>
+								<div class="accordion__panel">
+									<p data-i18n="faq.a4">
+										Sim, o motorista ajudará certamente com a sua bagagem.
+									</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__btn" aria-expanded="false">
+									<span data-i18n="faq.q5"
+										>Posso pedir uma cadeira de criança?</span
+									>
+									<i class="bi bi-plus-lg"></i>
+								</button>
+								<div class="accordion__panel">
+									<p data-i18n="faq.a5">
+										Sim, se viajar com uma criança, isso pode ser combinado na
+										fase de reserva.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- ============ FOOTER ============ -->
+		<footer class="footer">
+			<div class="container footer__grid">
+				<div class="footer__brand">
+					<a href="#home" class="footer__logo" aria-label="Sublime Trips"
+						><img
+							src="assets/Logo.webp"
+							alt=""
+							width="96"
+							height="86"
+							loading="lazy"
+					/></a>
+					<span class="navbar__name footer__name">Sublime <em>Trips</em></span>
+				</div>
+				<ul class="footer__contact">
+					<li>
+						<a href="tel:+351916881648"
+							><i class="bi bi-telephone"></i> +351 916 881 648</a
+						>
+					</li>
+					<li>
+						<a href="mailto:info@sublimetrips.com"
+							><i class="bi bi-envelope"></i> info@sublimetrips.com</a
+						>
+					</li>
+				</ul>
+				<ul class="footer__contact">
+					<li>
+						<a href="#" aria-label="Facebook"
+							><i class="bi bi-facebook"></i> Facebook</a
+						>
+					</li>
+					<li>
+						<a href="#" aria-label="Instagram"
+							><i class="bi bi-instagram"></i> Instagram</a
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					© <span id="year"></span>
+					<span data-i18n="footer.rights">Desenvolvido por Codeconnect</span>
+				</div>
+			</div>
+		</footer>
+
+		<a
+			href="https://wa.me/351916881648"
+			class="whatsapp"
+			aria-label="WhatsApp"
+			target="_blank"
+			rel="noopener"
+			><i class="bi bi-whatsapp"></i
+		></a>
+		<button
+			class="to-top"
+			id="toTop"
+			data-i18n-attr="aria-label:aria.top"
+			aria-label="Voltar ao topo"
+		>
+			<i class="bi bi-arrow-up"></i>
+		</button>
+
+		<script src="lang-switcher.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/sections.js"></script>
+	</body>
+</html>
