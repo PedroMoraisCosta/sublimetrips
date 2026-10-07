@@ -97,5 +97,7 @@
   "contact.send": "Enviar mensaje",
   "contact.error": "Rellene todos los campos obligatorios.",
   "contact.success": "Gracias! Nos pondremos en contacto con usted en breve.",
+  "contact.fail": "Lo sentimos, nuestro servicio de correo está temporalmente fuera de servicio. Para no perder tiempo, envíenos su mensaje por WhatsApp: ¡ya lo hemos escrito por usted!",
+  "contact.fail.cta": "Enviar por WhatsApp",
   "footer.rights": "Desarrollado por Codeconnect"
 }

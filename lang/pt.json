@@ -97,5 +97,7 @@
   "contact.send": "Enviar mensagem",
   "contact.error": "Preencha todos os campos obrigatórios.",
   "contact.success": "Obrigado! Entraremos em contato brevemente.",
+  "contact.fail": "Pedimos desculpa, o nosso serviço de emails está temporariamente em baixo. Para não perder tempo, envie-nos a sua mensagem por WhatsApp — já a deixámos escrita para si!",
+  "contact.fail.cta": "Enviar por WhatsApp",
   "footer.rights": "Desenvolvido por Codeconnect"
 }

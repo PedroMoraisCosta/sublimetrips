@@ -97,5 +97,7 @@
   "contact.send": "Send message",
   "contact.error": "Please fill in all required fields.",
   "contact.success": "Thank you! We will contact you shortly.",
+  "contact.fail": "Sorry, our email service is temporarily down. To save you time, send us your message on WhatsApp instead — we've already written it for you!",
+  "contact.fail.cta": "Send via WhatsApp",
   "footer.rights": "Developed by Codeconnect"
 }
