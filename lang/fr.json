@@ -15,7 +15,7 @@
 	"nav.services": "Services",
 	"nav.fleet": "Voitures",
 	"nav.destinations": "Routes",
-	"nav.contact": "Contact",
+	"nav.contact": "Contacts",
 
 	"common.from": "dès",
 
@@ -89,7 +89,7 @@
 	"faq.q6": "Combien coûte le trajet ?",
 	"faq.a6": "Le prix dépend du trajet et de la catégorie de véhicule. Laissez-nous une demande ou écrivez-nous : nous vous enverrons rapidement un devis personnalisé.",
 
-	"contact.eyebrow": "Contact",
+	"contact.eyebrow": "Contacts",
 	"contact.title": "Contactez-nous",
 	"contact.name": "Nom",
 	"contact.email": "E-mail",

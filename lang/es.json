@@ -15,7 +15,7 @@
   "nav.services": "Servicios",
   "nav.fleet": "Coches",
   "nav.destinations": "Rutas",
-  "nav.contact": "Contacto",
+  "nav.contact": "Contactos",
 
   "common.from": "desde",
 
@@ -89,7 +89,7 @@
   "faq.q6": "Cuánto cuesta el viaje?",
   "faq.a6": "El precio depende de la ruta y de la clase de vehículo. Deje una solicitud o escríbanos: le enviaremos rápidamente un presupuesto personalizado.",
 
-  "contact.eyebrow": "Contacto",
+  "contact.eyebrow": "Contactos",
   "contact.title": "Póngase en contacto",
   "contact.name": "Nombre",
   "contact.email": "Correo electrónico",

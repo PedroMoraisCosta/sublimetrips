@@ -15,7 +15,7 @@
   "nav.services": "Services",
   "nav.fleet": "Cars",
   "nav.destinations": "Routes",
-  "nav.contact": "Contact",
+  "nav.contact": "Contacts",
 
   "common.from": "from",
 
@@ -89,7 +89,7 @@
   "faq.q6": "How much does the trip cost?",
   "faq.a6": "The price depends on the route and vehicle class. Leave a request or message us — we will quickly provide you with a personalized quote.",
 
-  "contact.eyebrow": "Contact",
+  "contact.eyebrow": "Contacts",
   "contact.title": "Get in touch",
   "contact.name": "Name",
   "contact.email": "Email",
