@@ -139,7 +139,7 @@ h4 {
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
 	color: var(--primary);
-	background: red;
+	background: lightgreen;
 }
 
 .grid {
@@ -1116,6 +1116,15 @@ h4 {
 	opacity: 1;
 	visibility: visible;
 	transform: none;
+}
+/* Telemóvel: subir os botões para ficarem acima da barra inferior do browser (iPhone) */
+@media (max-width: 768px) {
+	.whatsapp {
+		bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+	}
+	.to-top {
+		bottom: calc(144px + env(safe-area-inset-bottom, 0px));
+	}
 }
 
 /* Scroll reveal (toggled by JS) */
