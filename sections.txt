@@ -1,8 +1,8 @@
-services=false
+services=true
 fleet=false
 destinations=true
 about=false
-contact=false
+contact=true
 translations.en=false
 translations.es=false
 translations.fr=false
