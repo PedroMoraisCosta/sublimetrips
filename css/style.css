@@ -139,7 +139,7 @@ h4 {
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
 	color: var(--primary);
-	background: lightgreen;
+	background: orange;
 }
 
 .grid {
@@ -147,7 +147,7 @@ h4 {
 	gap: 24px;
 }
 .grid--3 {
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid--4 {
 	grid-template-columns: repeat(4, 1fr);
@@ -1147,6 +1147,14 @@ h4 {
 	}
 	.footer__grid {
 		grid-template-columns: 1fr 1fr;
+	}
+	/* sem aspect-ratio quadrado: com pouca largura (ex. telemóvel na horizontal) o conteúdo alargava o card e gerava scroll horizontal */
+	.destination {
+		aspect-ratio: auto;
+		padding: 24px 20px 28px;
+	}
+	.destination span {
+		font-size: 1.3rem;
 	}
 }
 
