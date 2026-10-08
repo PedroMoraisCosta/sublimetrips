@@ -221,6 +221,7 @@ h1, h2, h3, h4 { color: var(--dark); line-height: 1.2; font-weight: 600; }
 .input:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(212,175,55,.2); }
 .input.invalid { border-color: var(--danger); }
 
+.form-note { font-size: 0.88rem; text-align: center; opacity: 0.85; }
 .form-msg { min-height: 1.2em; font-size: 0.88rem; text-align: center; }
 .form-msg.ok { color: var(--success); }
 .form-msg.error { color: var(--danger); }

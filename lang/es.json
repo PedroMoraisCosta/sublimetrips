@@ -92,12 +92,11 @@
   "contact.eyebrow": "Contactos",
   "contact.title": "Póngase en contacto",
   "contact.name": "Nombre",
-  "contact.email": "Correo electrónico",
   "contact.message": "Mensaje",
-  "contact.send": "Enviar mensaje",
+  "contact.subject": "Título",
+  "contact.send": "Enviar",
   "contact.error": "Rellene todos los campos obligatorios.",
-  "contact.success": "Gracias! Nos pondremos en contacto con usted en breve.",
-  "contact.fail": "Lo sentimos, nuestro servicio de correo está temporalmente fuera de servicio. Para no perder tiempo, envíenos su mensaje por WhatsApp: ¡ya lo hemos escrito por usted!",
-  "contact.fail.cta": "Enviar por WhatsApp",
+  "contact.note1": "Abriremos WhatsApp con su mensaje ya escrito.",
+  "contact.note2": "Solo tiene que pulsar Enviar.",
   "footer.rights": "Desarrollado por Codeconnect"
 }

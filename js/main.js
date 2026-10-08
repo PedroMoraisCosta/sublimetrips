@@ -120,58 +120,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Contact form ---------- */
   const contact = $('#contactForm')
-  const EMAIL_API = 'https://magest2api-3bbfb75c6660.herokuapp.com/email'
   const WHATSAPP_NUMBER = '351916881648'
 
-  // Serviço de email em baixo: mensagem simpática + link WhatsApp com o texto já escrito
-  const showEmailFallback = (msg, data) => {
-    const body = [
-      `${t('contact.name')}: ${data.name}`,
-      `${t('contact.email')}: ${data.email}`,
-      `${t('contact.message')}: ${data.message}`
-    ].join('\n')
-    const link = document.createElement('a')
-    link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-      body
-    )}`
-    link.target = '_blank'
-    link.rel = 'noopener'
-    link.className = 'nav-whatsapp'
-    link.style.marginTop = '12px'
-    link.innerHTML = `<i class="bi bi-whatsapp"></i> `
-    link.append(t('contact.fail.cta'))
-    msg.className = 'form-msg error'
-    msg.textContent = t('contact.fail')
-    msg.append(document.createElement('br'), link)
-  }
+  // Clicar em "Reservar" num serviço/rota preenche a mensagem com "Título - "
+  let lastPrefix = ''
+  $$('.service__cta, .destination__cta').forEach(cta =>
+    cta.addEventListener('click', () => {
+      const titleEl = cta.closest('.service, .destination')?.querySelector(
+        'h3, [data-i18n$=".title"]'
+      )
+      if (!titleEl) return
+      const title = titleEl.innerText.replace(/\s+/g, ' ').trim()
+      const field = $('#cmsg')
+      const rest = field.value.startsWith(lastPrefix)
+        ? field.value.slice(lastPrefix.length)
+        : field.value
+      lastPrefix = `${t('contact.subject')}: ${title}\n`
+      field.value = lastPrefix + rest
+      field.closest('.input')?.classList.remove('invalid')
+      field.focus({ preventScroll: true })
+      field.setSelectionRange(lastPrefix.length, lastPrefix.length)
+    })
+  )
 
-  contact.addEventListener('submit', async e => {
+  // Envio apenas por WhatsApp, com o texto já escrito
+  contact.addEventListener('submit', e => {
     e.preventDefault()
     const msg = $('#contactMsg')
     if (!validate(contact, msg)) return
-    const data = {
-      name: $('#cname').value.trim(),
-      to: $('#cemail').value.trim(),
-      message: $('#cmsg').value.trim(),
-      from: 'manuelamorais1954@gmail.com'
-    }
-    const btn = $("button[type='submit']", contact)
-    btn.disabled = true
-    try {
-      const res = await fetch(EMAIL_API, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      })
-      if (!res.ok) throw new Error(res.status)
-      msg.className = 'form-msg ok'
-      msg.textContent = t('contact.success')
-      contact.reset()
-    } catch {
-      showEmailFallback(msg, data)
-    } finally {
-      btn.disabled = false
-    }
+    const text = $('#cmsg').value.trim()
+    // Se a mensagem já começa com "Título: ...", não repetir o rótulo "Mensagem:"
+    const hasTitle = lastPrefix && text.startsWith(lastPrefix.trim())
+    const body = [
+      `${t('contact.name')}: ${$('#cname').value.trim()}`,
+      hasTitle ? text : `${t('contact.message')}: ${text}`
+    ].join('\n')
+    lastPrefix = ''
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(body)}`,
+      '_blank',
+      'noopener'
+    )
+    msg.className = 'form-msg'
+    msg.textContent = ''
+    contact.reset()
   })
   $$('.input input, .input textarea, .input select').forEach(f =>
     f.addEventListener('input', () =>
