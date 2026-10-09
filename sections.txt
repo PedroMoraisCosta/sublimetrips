@@ -1,6 +1,6 @@
 services=true
 destinations=true
-contact=false
+contact=true
 about=true
 fleet=false
 translations.en=false
