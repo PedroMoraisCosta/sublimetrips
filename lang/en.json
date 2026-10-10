@@ -105,5 +105,22 @@
 	"footer.privacy": "Privacy Policy",
 	"footer.complaints": "Complaints Book",
 	"footer.praise": "Praise Book",
-	"footer.rights": "Developed by Codeconnect"
+	"footer.rights": "Developed by Codeconnect",
+
+	"privacy.meta.title": "Privacy Policy | Sublime Trips",
+	"privacy.title": "Privacy Policy",
+	"privacy.intro": "Sublime Trips (VAT no. 517405946, headquartered at Rua Álvaro Aurélio do Céu Oliveira, 312, 3.º C, 4470-134 Maia, Portugal) respects your privacy and processes your personal data in accordance with the General Data Protection Regulation (GDPR).",
+	"privacy.data.title": "Data we collect",
+	"privacy.data.text": "Name, phone number and trip details (origin, destination, date and time, number of passengers and luggage), provided by you through the contact form, phone or WhatsApp.",
+	"privacy.purpose.title": "Purpose",
+	"privacy.purpose.text": "We use this data exclusively to respond to your requests, confirm availability and price, and provide the contracted transport service.",
+	"privacy.retention.title": "Retention and sharing",
+	"privacy.retention.text": "Data is kept only for the period necessary for the purposes above or to comply with legal obligations. We do not sell or share your data with third parties, except when necessary to provide the service or required by law.",
+	"privacy.rights.title": "Your rights",
+	"privacy.rights.text": "You may at any time request access to, rectification, erasure, restriction or portability of your data, and object to its processing, using the contacts listed on this website. You also have the right to lodge a complaint with the Portuguese data protection authority (CNPD).",
+	"privacy.links.title": "Links to external websites",
+	"privacy.links.text": "Our website may contain links to external websites that are not operated by us. Please be aware that we have no control over the content and practices of these sites and cannot accept responsibility for their privacy policies.",
+	"privacy.contact.title": "Contact information",
+	"privacy.contact.text": "For more information about our privacy policy, or if you have any questions, please contact us by email at <a href=\"mailto:passeios.afortunados@gmail.com\">passeios.afortunados@gmail.com</a>.",
+	"privacy.back": "&larr; Back to the website"
 }

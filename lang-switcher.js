@@ -68,7 +68,8 @@ function applyTranslations () {
   })
 
   // Título e meta description
-  if (translations['meta.title']) document.title = translations['meta.title']
+  // (páginas com <title data-i18n> usam a sua própria chave)
+  if (translations['meta.title'] && !document.querySelector('title[data-i18n]')) document.title = translations['meta.title']
   const desc = document.querySelector('meta[name="description"]')
   if (desc && translations['meta.description']) desc.setAttribute('content', translations['meta.description'])
 }

@@ -105,5 +105,22 @@
 	"footer.privacy": "Politique de confidentialité",
 	"footer.complaints": "Livre de réclamations",
 	"footer.praise": "Livre d'éloges",
-	"footer.rights": "Développé par Codeconnect"
+	"footer.rights": "Développé par Codeconnect",
+
+	"privacy.meta.title": "Politique de confidentialité | Sublime Trips",
+	"privacy.title": "Politique de confidentialité",
+	"privacy.intro": "Sublime Trips (NIF 517405946, siège social : Rua Álvaro Aurélio do Céu Oliveira, 312, 3.º C, 4470-134 Maia, Portugal) respecte votre vie privée et traite vos données personnelles conformément au Règlement général sur la protection des données (RGPD).",
+	"privacy.data.title": "Données que nous collectons",
+	"privacy.data.text": "Nom, téléphone et détails du trajet (origine, destination, date et heure, nombre de passagers et bagages), que vous nous fournissez via le formulaire de contact, par téléphone ou par WhatsApp.",
+	"privacy.purpose.title": "Finalité",
+	"privacy.purpose.text": "Nous utilisons ces données exclusivement pour répondre à vos demandes, confirmer la disponibilité et le prix, et fournir le service de transport convenu.",
+	"privacy.retention.title": "Conservation et partage",
+	"privacy.retention.text": "Les données ne sont conservées que pendant la durée nécessaire aux finalités ci-dessus ou au respect des obligations légales. Nous ne vendons ni ne partageons vos données avec des tiers, sauf si cela est nécessaire à la prestation du service ou imposé par la loi.",
+	"privacy.rights.title": "Vos droits",
+	"privacy.rights.text": "Vous pouvez à tout moment demander l'accès, la rectification, l'effacement, la limitation ou la portabilité de vos données, et vous opposer à leur traitement, via les contacts indiqués sur ce site. Vous avez également le droit d'introduire une réclamation auprès de l'autorité portugaise de protection des données (CNPD).",
+	"privacy.links.title": "Liens vers des sites externes",
+	"privacy.links.text": "Notre site peut contenir des liens vers des sites externes que nous n'exploitons pas. Sachez que nous n'avons aucun contrôle sur le contenu et les pratiques de ces sites et que nous déclinons toute responsabilité quant à leurs politiques de confidentialité.",
+	"privacy.contact.title": "Coordonnées",
+	"privacy.contact.text": "Pour plus d'informations sur notre politique de confidentialité, ou si vous avez des questions, contactez-nous par e-mail : <a href=\"mailto:passeios.afortunados@gmail.com\">passeios.afortunados@gmail.com</a>.",
+	"privacy.back": "&larr; Retour au site"
 }
