@@ -1036,6 +1036,23 @@ h4 {
 	gap: 16px;
 	flex-wrap: wrap;
 }
+.footer__id {
+	display: grid;
+	justify-items: center;
+	text-align: center;
+	gap: 2px;
+}
+.footer__id small {
+	font-size: 0.9rem;
+}
+.footer__id small a {
+	color: var(--white);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+.footer__id small a:hover {
+	color: var(--primary);
+}
 .footer__name {
 	font-size: 1.9rem;
 }
@@ -1055,6 +1072,52 @@ h4 {
 .footer__contact i {
 	color: var(--primary);
 	font-size: 1.05rem;
+}
+.call-note {
+	display: block;
+	margin-top: 4px;
+	font-size: 0.75rem;
+	opacity: 0.75;
+}
+.footer__info {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+}
+.footer__legal {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px 24px;
+	margin-bottom: 10px;
+}
+.footer__copy {
+	color: var(--white);
+}
+.footer__copy [data-i18n] {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+.footer__copy:hover {
+	color: var(--primary);
+}
+.footer__note {
+	margin-bottom: 10px;
+	font-size: 0.75rem;
+	opacity: 0.8;
+}
+.footer__legal a {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+.footer__legal a {
+	color: var(--white);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+.footer__legal a:hover {
+	color: var(--primary);
 }
 .footer__contact a:hover {
 	color: var(--primary);

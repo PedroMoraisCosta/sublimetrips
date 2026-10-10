@@ -56,6 +56,8 @@
 	"fleet.eclass": "Mercedes E-Class",
 	"fleet.vito": "Mercedes Vito",
 	"fleet.galaxy": "Ford Galaxy",
+	"fleet.hold": "checked",
+	"fleet.cabin": "cabin",
 
 	"dest.eyebrow": "Popular routes",
 	"dest.title": "Popular Routes",
@@ -98,5 +100,9 @@
 	"contact.error": "Please fill in all required fields.",
 	"contact.note1": "We will open WhatsApp with your message already written.",
 	"contact.note2": "Just press Send.",
+	"footer.callnote": "* Call to a national mobile network.",
+	"footer.address": "Address",
+	"footer.privacy": "Privacy Policy",
+	"footer.complaints": "Complaints Book",
 	"footer.rights": "Developed by Codeconnect"
 }
