@@ -471,7 +471,7 @@ h4 {
 .hero {
 	position: relative;
 	color: var(--white);
-	background: url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1800&q=70")
+	background: url("../assets/fundo_header.webp")
 		center/cover no-repeat;
 	padding: 110px 0 120px;
 }
