@@ -1352,6 +1352,22 @@ body.menu-open {
 	}
 	.footer__grid {
 		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+	}
+	.footer__brand {
+		justify-content: center;
+	}
+	.footer__contact {
+		justify-items: center;
+	}
+	.footer__info {
+		text-align: center;
+	}
+	.footer__contact a,
+	.footer__info {
+		flex-direction: column;
+		gap: 4px;
 	}
 	.destination {
 		aspect-ratio: auto;

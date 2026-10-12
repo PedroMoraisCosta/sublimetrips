@@ -1,0 +1,87 @@
+/* Bootstrap Icons 1.13.1 (MIT) - apenas os ícones usados, servidos localmente.
+   Uso: <i class="bi bi-nome"></i>. A cor segue o `color` do elemento. */
+.bi::before {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.125em;
+	background-color: currentColor;
+	-webkit-mask: var(--bi) center / contain no-repeat;
+	mask: var(--bi) center / contain no-repeat;
+}
+.bi-airplane {
+	--bi: url("../assets/icons/airplane.svg");
+}
+.bi-arrow-up {
+	--bi: url("../assets/icons/arrow-up.svg");
+}
+.bi-brightness-high {
+	--bi: url("../assets/icons/brightness-high.svg");
+}
+.bi-building {
+	--bi: url("../assets/icons/building.svg");
+}
+.bi-buildings {
+	--bi: url("../assets/icons/buildings.svg");
+}
+.bi-check-circle-fill {
+	--bi: url("../assets/icons/check-circle-fill.svg");
+}
+.bi-chevron-down {
+	--bi: url("../assets/icons/chevron-down.svg");
+}
+.bi-envelope {
+	--bi: url("../assets/icons/envelope.svg");
+}
+.bi-facebook {
+	--bi: url("../assets/icons/facebook.svg");
+}
+.bi-geo-alt {
+	--bi: url("../assets/icons/geo-alt.svg");
+}
+.bi-handbag {
+	--bi: url("../assets/icons/handbag.svg");
+}
+.bi-instagram {
+	--bi: url("../assets/icons/instagram.svg");
+}
+.bi-journal-text {
+	--bi: url("../assets/icons/journal-text.svg");
+}
+.bi-luggage {
+	--bi: url("../assets/icons/luggage.svg");
+}
+.bi-map {
+	--bi: url("../assets/icons/map.svg");
+}
+.bi-people {
+	--bi: url("../assets/icons/people.svg");
+}
+.bi-person-wheelchair {
+	--bi: url("../assets/icons/person-wheelchair.svg");
+}
+.bi-pin-map-fill {
+	--bi: url("../assets/icons/pin-map-fill.svg");
+}
+.bi-plus-lg {
+	--bi: url("../assets/icons/plus-lg.svg");
+}
+.bi-signpost-split {
+	--bi: url("../assets/icons/signpost-split.svg");
+}
+.bi-suitcase-lg {
+	--bi: url("../assets/icons/suitcase-lg.svg");
+}
+.bi-telephone {
+	--bi: url("../assets/icons/telephone.svg");
+}
+.bi-tree {
+	--bi: url("../assets/icons/tree.svg");
+}
+.bi-whatsapp {
+	--bi: url("../assets/icons/whatsapp.svg");
+}
+.bi-wifi {
+	--bi: url("../assets/icons/wifi.svg");
+}
