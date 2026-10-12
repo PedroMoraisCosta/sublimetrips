@@ -1,4 +1,5 @@
 /* Bootstrap Icons 1.13.1 (MIT) - apenas os ícones usados, servidos localmente.
+   O ícone `church` é do Lucide (ISC).
    Uso: <i class="bi bi-nome"></i>. A cor segue o `color` do elemento. */
 .bi::before {
 	content: "";
@@ -16,9 +17,6 @@
 .bi-arrow-up {
 	--bi: url("../assets/icons/arrow-up.svg");
 }
-.bi-brightness-high {
-	--bi: url("../assets/icons/brightness-high.svg");
-}
 .bi-building {
 	--bi: url("../assets/icons/building.svg");
 }
@@ -27,6 +25,9 @@
 }
 .bi-check-circle-fill {
 	--bi: url("../assets/icons/check-circle-fill.svg");
+}
+.bi-church {
+	--bi: url("../assets/icons/church.svg");
 }
 .bi-chevron-down {
 	--bi: url("../assets/icons/chevron-down.svg");
